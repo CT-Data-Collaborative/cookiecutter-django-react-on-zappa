@@ -1,8 +1,11 @@
-{% raw %}{% extends "base.html" %}{% endraw %}
-{% raw %}{% load staticfiles i18n static %}{% endraw %}
-{% raw %}{% load render_bundle from webpack_loader %}{% endraw %}
+{% raw %}
+{% extends "base.html" %}
+{% load staticfiles i18n static %}
+{% load render_bundle from webpack_loader %}
 
 {% block javascript %}
     {{ block.super }}
     {% render_bundle 'home' %}
 {% endblock %}
+{% endraw %}
+

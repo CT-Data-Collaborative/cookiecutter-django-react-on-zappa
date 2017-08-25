@@ -1,6 +1,6 @@
 FROM lambci/lambda:build-python3.6
 
-MAINTAINER {% cookiecutter.author %} <{% cookiecutter.email %}>
+MAINTAINER {{ cookiecutter.author_name }} <{{ cookiecutter.email }}>
 # MAINTAINER Sasha Cuerda <sasha.cuerda@gmail.com>
 
 WORKDIR /task

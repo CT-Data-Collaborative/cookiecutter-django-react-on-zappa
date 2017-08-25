@@ -127,14 +127,11 @@ DATABASES = {
 
 # CACHING
 # ------------------------------------------------------------------------------
-# {% if cookiecutter.use_elasticbeanstalk_experimental.lower() == 'y' -%}
+
 # REDIS_LOCATION = 'redis://{}:{}/0'.format(
 #     env('REDIS_ENDPOINT_ADDRESS'),
 #     env('REDIS_PORT')
 # )
-# {% else %}
-# REDIS_LOCATION = '{0}/{1}'.format(env('REDIS_URL', default='redis://127.0.0.1:6379'), 0)
-# {%- endif %}
 # # Heroku URL does not pass the DB number, so we parse it in
 # CACHES = {
 #     'default': {
