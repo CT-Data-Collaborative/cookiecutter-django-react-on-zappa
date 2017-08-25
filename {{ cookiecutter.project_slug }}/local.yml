@@ -12,3 +12,8 @@ services:
       - postgres_backup_dev:/backups
     environment:
       - POSTGRES_USER={{cookiecutter.project_slug}}
+    ports:
+      - "5432:5432"
+
+networks:
+  default:
