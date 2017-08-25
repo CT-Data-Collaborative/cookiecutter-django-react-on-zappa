@@ -1,0 +1,6 @@
+{
+    "dev": { 
+       "s3_bucket": "{{cookiecutter.s3_bucket}}", 
+       "django_settings": "{{cookiecutter.project_slug}}.config.settings.dev"  
+    }
+}
